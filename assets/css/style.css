@@ -1,0 +1,186 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*//////////////////////////////////////////////////*/
+
+@font-face {
+    font-family: ScaryHalloween;
+    src: url('../fonts/scaryhalloween.ttf');
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/lato.ttf');
+}
+
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/background.jpg') no-repeat center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+h1, h2, h3 {
+    font-family: ScaryHalloween, sans-serif;
+    color: #FFCC01;
+    text-align: center;
+    cursor: default;
+}
+
+h1 {
+    font-size: 55px;
+    margin-top: 5%;
+}
+
+@keyframes wiggle{
+    0%{transform:rotate(1deg);}
+    50%{transform:rotate(-1deg);}
+    100%{transform:rotate(1deg);}
+}
+
+h1:hover{animation:wiggle 0.5s infinite;}
+
+
+h2, h3 {
+    margin-top: 2%;
+}
+
+h3 {
+    display: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 2% auto;
+}
+
+table {
+    margin: 5% auto;
+}
+
+td img {
+    padding: 5px;
+    height: 130px;
+    width: 130px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+td img:hover {
+    cursor: pointer;
+    -webkit-filter: none;
+    filter: none;
+}
+
+.karaoke {
+    display: none;
+    margin-top: 5%;
+}
+
+.controls {
+    margin: auto;
+    height: 50px;
+}
+
+.audio-play-pause {
+    height: 40px;
+    width: 60px;
+    background: #FFCC01;
+    cursor: pointer;
+    position: relative;
+    float: left;
+    margin-left: 20%;
+    border-radius: 2px;
+}
+
+.playpause {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 25px;
+}
+
+.sound-on-off {
+    height: 40px;
+    width: 60px;
+    background: #FFCC01;
+    cursor: pointer;
+    position: relative;
+    float: left;
+    margin-left: 5px;
+    border-radius: 2px;
+}
+
+.sound {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 25px;
+}
+
+.timeline {
+    width: 60%;
+    height: 15px;
+    background: white;
+    border-radius: 2px;
+    margin: auto;
+}
+
+.range {
+    width: 0;
+    background: #FFCC01;
+    height: 15px;
+    border-radius: 2px;
+}
+
+.lyrics-container {
+    font-family: Lato, sans-serif;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    margin: 8% auto;
+    height: 80px;
+    line-height: 80px;
+}
