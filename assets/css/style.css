@@ -166,6 +166,7 @@ td img:hover {
     background: white;
     border-radius: 2px;
     margin: auto;
+    cursor: pointer;
 }
 
 .range {
