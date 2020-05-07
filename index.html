@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Halloween Karaoke</title>
+    <link href="assets/img/favicon.ico" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/jquery-3.1.1.min.js"></script>
-    <script src="assets/js/jquery.easyaudioeffects.1.0.0.min.js"></script>
-    <script src="assets/js/script.js"></script>
 </head>
 <body>
 <main>
@@ -14,6 +12,7 @@
     <h2>Choose a song</h2>
     <h3>Change song</h3>
 
+    <!--
     <table>
         <tr>
             <td id="rocky"><img src="assets/img/rocky.jpg"></td>
@@ -22,6 +21,14 @@
             <td id="ghostbusters"><img src="assets/img/ghostbusters.jpg"></td>
         </tr>
     </table>
+    -->
+
+    <div class="table">
+        <div class="td" id="rocky"><img src="assets/img/rocky.jpg"></div>
+        <div class="td" id="rockwell"><img src="assets/img/rockwell.jpg"></div>
+        <div class="td" id="thriller"><img src="assets/img/thriller.jpg"></div>
+        <div class="td" id="ghostbusters"><img src="assets/img/ghostbusters.jpg"></div>
+    </div>
 
     <div class="karaoke">
         <div class="lyrics-container"></div>
@@ -33,10 +40,12 @@
             <div class="range"></div>
         </div>
     </div>
-
 </main>
 <footer>
-    &copy; <a href="https://twitter.com/_lattys" target="_blank">LattyS</a>
+    &copy; <a href="https://laurieseiller.com/" target="_blank">LattyS</a>
 </footer>
+<script src="assets/js/jquery-3.1.1.min.js"></script>
+<script src="assets/js/jquery.easyaudioeffects.1.0.0.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

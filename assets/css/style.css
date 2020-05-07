@@ -90,20 +90,28 @@ h3 {
     margin: 2% auto;
 }
 
-table {
+.table {
     margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-td img {
-    padding: 5px;
+.td {
+    margin: 5px;
     height: 130px;
     width: 130px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    cursor: pointer;
 }
 
-td img:hover {
-    cursor: pointer;
+.td img {
+    height: 100%;
+    width: 100%;
+}
+
+.td:hover {
     -webkit-filter: none;
     filter: none;
 }
@@ -188,7 +196,7 @@ td img:hover {
 
 footer {
     font-family: Lato, sans-serif;
-    font-size: 10px;
+    font-size: 13px;
     position: absolute;
     bottom: 5px;
     right: 5px;

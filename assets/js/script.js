@@ -15,7 +15,7 @@ window.onload = function() {
     var musicChoice;
     var txtContent;
 
-    $('td').click(function() {
+    $('.td').click(function() {
         musicChoice = this.id;
         sourceMP3.src = "assets/music/"+ musicChoice +".mp3";
         audioplayer.load();
@@ -27,7 +27,7 @@ window.onload = function() {
             lyricsAvailable();
         });
 
-        $('table, h2').fadeOut(500);
+        $('.table, h2').fadeOut(500);
         $('.karaoke, h3').delay(500).fadeIn(500);
     });
 
@@ -35,12 +35,12 @@ window.onload = function() {
 
     /* Sound effects plugin */
 
-    $('td').easyAudioEffects({
+    $('.td').easyAudioEffects({
         mp3 : "http://www.soundjay.com/switch/sounds/switch-22a.mp3",
         eventType : "hover"
     });
 
-    $('td').easyAudioEffects({
+    $('.td').easyAudioEffects({
         mp3 : "http://www.soundjay.com/communication/sounds/cassette-player-button-3.mp3",
         eventType : "click"
     });
@@ -109,7 +109,7 @@ window.onload = function() {
 
     $('h3').click(function() {
         $('h3, .karaoke').fadeOut(500);
-        $('table, h2').delay(500).fadeIn(500);
+        $('.table, h2').delay(500).fadeIn(500);
         audioplayer.pause();
         audioplayer.volume = 1;
         audioplayer.currentTime = 0.0;
@@ -163,7 +163,6 @@ window.onload = function() {
         }
 
         var arraySync = combineArrays(arraySeconds, arrayLyrics);
-        console.log(arraySync);
 
         /* Sync lyrics with currentTime */
 
